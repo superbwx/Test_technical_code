@@ -13,7 +13,19 @@ namespace TestMechanical.Controllers
         [HttpGet("/segitiga/{id}")]
         public IActionResult Segitiga(int id)
         {
-            List<int> segitiga = split(id);
+            char[] idNa = id.ToString().ToCharArray();
+            List<string> segitiga = new List<string>();
+
+            for (int i = 0; i < idNa.Length; i++) 
+            {
+                var number="";
+                for (int j = 0; j < i+1; j++) 
+                {
+                    number+=idNa[i];
+                }
+                segitiga.Add(number);
+            }
+
             return new OkObjectResult(segitiga);
         }
 
@@ -23,7 +35,7 @@ namespace TestMechanical.Controllers
         {
             List<int> ganjil = new List<int>();
 
-            for (int i = 0; i < id; i++) 
+            for (int i = 0; i < id+1; i++) 
             {
                 if(i%2==1){ganjil.Add(i);}
             }
@@ -34,7 +46,18 @@ namespace TestMechanical.Controllers
         [HttpGet("/prima/{id}")]
         public IActionResult Prima(int id)
         {
-            return new OkObjectResult(id);
+            List<int> prima = new List<int>();
+            for (int i = 1; i < id+1; i++) 
+            {
+                var primakah=0;
+                for (int j = 0; j < i+1; j++) 
+                {
+                    if(i%(j+1)==0){primakah++;}
+                }
+                if(primakah==2)prima.Add(i);
+            }
+
+            return new OkObjectResult(prima);
         }
     }
 }
