@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script src="~/js/mechanical.js" asp-append-version="true"></script>
+<div class="text-center">
+    <h1 class="display-5">Test Mechanical Code</h1>
+    <div class="form-group">
+        <input type="number" class="col-4 form-control" id="inputNilai" placeholder="Input Nilai" />
+        <div class="row ml-1">
+            <button class="mr-2 mt-2 btn btn-primary" onclick="segitiga()">Segitiga</button>
+            <button class="mr-2 mt-2 btn btn-outline-success" onclick="ganjil()">Ganjil</button>
+            <button class="mt-2 btn btn-success" onclick="prima()">Prima</button>
+        </div>
+        <div class="hasilKalkulasi"></div>
+    </div>
+</div>

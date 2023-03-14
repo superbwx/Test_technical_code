@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "ASEcGsnVH4uIQH7sHtBaXUYiOdoL1iK1FVJ3m1R2ylmSPRqWUmCMYkpwEAprhfU4OcES2CIKdS7QB8EL3vMe5Q==",
+  "success": true,
+  "projectFilePath": "E:\\MyData\\Pro\\asp.net\\Test_technical_code\\TestMechanical.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Arief\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Arief\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\Arief\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\Arief\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "C:\\Users\\Arief\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
+  "logs": []
+}
